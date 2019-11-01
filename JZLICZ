@@ -1,0 +1,29 @@
+import java.util.*;
+public class HelloWorld{
+
+     public static void main(String []args){
+         
+      int i=0;
+      int j=0;
+      int k=0;
+      char literka;
+      String wyraz="alama";
+      char[] tabchar = wyraz.toCharArray();
+      
+     
+    for(i=0; i<wyraz.length(); i++)
+     {
+     literka=tabchar[i];
+     for(j=0; j<wyraz.length(); j++)
+     if(tabchar[i]==tabchar[j])
+     {
+        k++;
+     }
+     
+     System.out.println(literka+" "+k);
+     k=0;
+     }
+       
+     }
+}
+
